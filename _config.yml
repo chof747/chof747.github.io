@@ -1,0 +1,28 @@
+title: Chof's Random Developments
+# email: chof@gmx.at
+description: >- # this means to ignore newlines until "baseurl:"
+ On this page you can find blog posts about my random developments which are
+ usually centered around electronics for home automation and development
+ automation.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: chof747
+
+# Build settings
+theme: minima
+# remote_theme: pages-themes/minima
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
