@@ -9,7 +9,7 @@ Welcome, here you will find in the future blog entries about my development proj
 
 Stay tuned as I am collecting currently some old stuff:
 
-- Trying to bring the webpage of my PhD thesis in chemical informatics here (old but should not be forgotten)
+- Trying to bring the [webpage of my PhD thesis](https://chof747.github.io/surfcomp/) in chemical informatics live again (old but should not be forgotten)
 - Get documentation for some of my more useful projects:
   - [Wiener Linien Home Assistant Extension](https://github.com/chof747/wienerlinien)
   - [Octoprint Autoprint](https://github.com/chof747/octoprint-autoprint)
