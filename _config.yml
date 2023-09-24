@@ -15,7 +15,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jemoji
-  
+
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
