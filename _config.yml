@@ -16,6 +16,15 @@ plugins:
   - jekyll-feed
   - jemoji
 
+comments:
+  provider: utterances
+
+utterances:
+  repo: "chof747/chof747.github.io"
+  issue-term: "pathname"
+  label: "chof747blog"
+  theme: "github-light"
+
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
