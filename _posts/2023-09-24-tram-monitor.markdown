@@ -1,17 +1,21 @@
 ---
 layout: post
 title:  "Tram Arrival Monitor"
+author: 
+  - Christian
 categories: electronics home-assistant
+toc: true
 ---
+
+* TOC
+{:toc}
+
 # Problem: Is it the right time to leave to catch the next tram?
 
 When I want to catch a tram to go to work, or I want to get a ride into the city for dinner or to meet friends, it sometimes happens to me that I just miss it when I arrive at the station, 2 minutes from my home. Or sometimes I hear it already coming along the street and have to start sprinting in order to catch it - which is not always guaranteed. And recently the trams in Vienna had to extend the interval quite a bit, at least in my area, which adds to the annoyance, when you have to wait 15 minutes for the next one. 15 Minutes I could have used more effectively at home for example for writing a new blog post. And yes of course there is [an app](https://www.wienerlinien.at/web/wl-en/wienmobil-app) to check when the next tram is coming , but sometimes picking out the phone when I have already packed it into my bag, opening the app, selecting the station can be a bit annoying.
-
 And hey, [Vienna's public transportation service](https://www.wienerlinien.at/web/wl-en) has a real time API and a few month ago I forked an [already existing Home Assistant integration](https://github.com/custom-components/wienerlinien) and created [my own version](https://github.com/chof747/wienerlinien) which is showing the time of the next departure on my Home Assistant Dashboard with some nice icons. But unfortunately I only have my home assistant dashboard available on the phone (yet). So no real gain so far. 
 
 So how to solve this issue and have some fun creating the solution?
-
-{:toc}
 
 # Idea: Make my own tram monitor device 
 
