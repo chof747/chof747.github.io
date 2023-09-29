@@ -32,13 +32,13 @@ Wouldn't it be useful to have a little device or indicator right there where I n
 
 As it happens I have recently designed and ordered a breakout board to test RGB leds as a status bar. You can find the schematic and PCB files on my GitHub under [led-status-bar](https://github.com/chof747/led-status-bar). And with 5 RGB leds it should be possible to indicate the status of the next tram arrival including some timing features in the following way:
 
-![LED Bar Status colors](/assets/images/status-lights_tram-monitor.png){:class="img-explain"}
+![LED Bar Status colors](/assets/images/tram-monitor/status-lights.png){:class="img-explain"}
 
 And having the status of the tram station already as a sensor in home assistant I can put all of it together via a Wemos D1 Mini which is polling the data from home assistant, interpreting the time of the next arrival and translating it into the proper color code of the status bar.
 
 In the final version I also added a push button to the device to be able to check the status on request and not having the lights on all the time, which can be a bit annyoing, especially at night and also saves a few mW when nobody is looking on it:
 
-![Wemos D1 Mini based prototype](/assets/images/wemos-prototype_tram-monitor.jpg)
+![Wemos D1 Mini based prototype](/assets/images/tram-monitor/wemos-prototype.jpg)
 
 # Implementation
 
@@ -54,7 +54,7 @@ The device is simple put together with a few components. You need
 
 Assemble them according to the following diagram:
 
-![Tram Monitor Connection Diagram](/assets/images/connection-sketch_tram-monitor.jpg)
+![Tram Monitor Connection Diagram](/assets/images/tram-monitor/connection-sketch.jpg)
 
 | Wemos D1 Mini Pin | Led Bar Pin | Push Button Pin |
 |-------------------|-------------|-----------------|
