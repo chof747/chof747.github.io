@@ -7,3 +7,11 @@
 .img-explain {
   width: 600px;
 }
+
+.img-original {
+  width: auto; /* Let the image width be automatic, based on the image's intrinsic width */
+  height: auto; /* Let the image height be automatic, based on the image's intrinsic height */
+  max-width: 100%; /* Prevent the image from scaling beyond its intrinsic width */
+  max-height: 100%; /* Prevent the image from scaling beyond its intrinsic height */
+}
+
