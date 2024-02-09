@@ -93,6 +93,30 @@ The main board with the D1 Mini and the Hat are stacked on top of each other and
 
 **TODO:** Picture of the case from Fusion360
 
+## Overall Assembly
+
+Putting this all together in the switch box outside of my appartment took a few more steps:
+
+1. Establishing mains power supply from behind my meter in the switch box
+2. Finding a proper place for the main device (containing the micro controller)
+3. Connecting the microcontroller board to the reader attached to the smart meter
+
+For the first step I asked of course an expert to find a proper solution, as playing around with Mains installation is nothing to mess around with easily. So the final solution was to use a spare circuit breaker in the switch box inside my appartement and root a cable in a spare channel back to the switchbox outside. By this I have a clean power line which is properly protected with an earth leackage trip and a circuit breaker and it can be switched on and off from within the appartment. 
+
+**Note:** Having everything properly installed turned out very important during tuning the setup, as I produced a significant short, which luckily was covered by all the implemented safety measures and did not cause any damage beyond the circuit board itself. So please do not tinker around with mains, if you do not know what to do!
+
+# Firmware
+
+When it comes to firmware, you have several options:
+
+- [Volkszaehler.org](https://volkszaehler.org/) offers also a full software stack including middleware and frontend <br/>
+(*I have not checked that in detail*)
+- [Tasmota](https://www.tasmota.info/) as mentioned already offers a [Smartmeter Interface](https://tasmota.github.io/docs/Smart-Meter-Interface/#general-description) which is extremely elaborated and offers very flexible solutions<br/>
+*I used this solution as firmware to try out the reader and establish a first working version*
+- There are tons of smaller projects besides the one I mentioned in the beginning which gave me concrete hints to solve the issues I was facing, there are a lot of other projects like that of [Alexander Pohl](https://github.com/ahpohl/smartmeter) for example
+
+However as mentioned already, I have my home automation solution built on HomeAssistant and ESPHome, so naturally I was looking for a solution that was based on an ESPHome firmware and was able to read the smart meter messages from my particular smart meter. And this involved several steps:
+
 
 # Setting up the Meter
 
