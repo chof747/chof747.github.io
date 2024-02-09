@@ -79,11 +79,20 @@ One word to the RJ11 connectors, I added them to create a more professional look
 
 ## Microcontroller Unit
 
+### Circuit Boards
+
 For the microcontroller I am using an ESP8266 on a Wemos-D1 Mini board. I have always a set of them in my drawers, as they are at the moment my favourite microcontrollers. As I planned to put it on the switchboard outside of my appartment I did not want to put there more parts than necessary. Therefore I created, also for other purposes a carrier PCB for the D1 Mini which also features a 5V power supply and breaks out the pins of the D1 Mini so that HATs can be put on it as well ([Wemos Mains Devboard](https://github.com/chof747/wemos-mains-dev)).
 
 In order to connect the two components together I also designed a [HAT containg two RJ11 sockets](https://github.com/chof747/rj11-wemos-hat) that provide power and ground plus two data lines which can be connected with bodge wire to particular GPIO pins increase the reuse of the board. Furthermore the sockets can be driven by either 3.3V logic voltage or the 5V power provided by the power supply.
 
 ![RJ11-Hat](/assets/images/power-reader/rj11-hat.png){:class="img-original"}
+
+### Microcontroller Case
+
+The main board with the D1 Mini and the Hat are stacked on top of each other and put into the same caae in a way, that there are openings in the case for both RJ11 sockets and the plugable screw terminal on the main board which receives the power. The case is designed in a way that the bottom plate and the housing are screwed together with 4 m3 screws and m3 brass insertion nuts. Also the main pcb is screwed on the bottom plate of the case with m3 screws and insertion nuts. The case also has a little roof like structure over the plugable screw terminal to safely cover the screws of the plug so that no mains voltage is exposed. 
+
+**TODO:** Picture of the case from Fusion360
+
 
 # Setting up the Meter
 
