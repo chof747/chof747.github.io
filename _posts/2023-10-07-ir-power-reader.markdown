@@ -117,6 +117,11 @@ When it comes to firmware, you have several options:
 
 However as mentioned already, I have my home automation solution built on HomeAssistant and ESPHome, so naturally I was looking for a solution that was based on an ESPHome firmware and was able to read the smart meter messages from my particular smart meter. And this involved several steps:
 
+1. Understanding the format of the data telegrams
+2. Decrypting the content which contains the data of the meter
+3. Parsing the decrypted telegram
+4. Implement a proper CRC checking to ensure data integrity of the transmitted data
+5. Wrapping everything into an ESPHome component and its sensors 
 
 # Setting up the Meter
 
